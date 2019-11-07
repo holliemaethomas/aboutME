@@ -1,0 +1,9 @@
+body {
+    background-color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+};
+h1 {
+/* margin: auto; */
+width: 100%;
+text-align: center;
+}
