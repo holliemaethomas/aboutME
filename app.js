@@ -1,110 +1,129 @@
 // 'use strict';
 var score = 0;
-// var userName = prompt('What is your name?').toUpperCase();
-// console.log("do you think " + userName + " likes us?")
+var userName = prompt('What is your name?').toUpperCase();
+console.log("do you think " + userName + " likes us?")
 
-// var likeTea = function () {
-//     var response = prompt(userName + " do you like tea? please answer yes or no").toUpperCase();
-// console.log(userName + " entered " + response);
+var likeTea = function () {
+    var response = prompt(userName + " do I like tea? please answer yes or no").toUpperCase();
+    console.log(userName + " entered " + response);
 
-// if (response === 'NO') {
-//     alert("I am slightly judging you")
-// }
-// if (response === 'YES'){
-//     alert("great we can be friends " + userName) 
-// }  
-// };
+    if (response === 'NO') {
+        alert("I drink more tea than water, I even have different tea sets and have studied tea ceremonies")
+    }
+    if (response === 'YES') {
+        score++;
+        alert("I do, I even have different tea sets and have studied tea ceremonies ")
+    }
+};
+console.log(score);
+var iceCream = function () {
+    var response = prompt(userName + " do I like ice cream? please answer yes or no").toUpperCase();
+    console.log(userName + " entered " + response);
 
-// var iceCream = function () {
-//     var response = prompt(userName + " do you like ice cream? please answer yes or no").toUpperCase();
-// console.log(userName + " entered " + response);
+    if (response === 'NO') {
+        alert("but, I do")
+    }
+    if (response === 'YES') {
+        alert("ice cream is life ")
+        score++;
+    }
+};
 
-// if (response === 'NO') {
-//     alert("Are you by chance lactose intolerant?")
-// }
-// if (response === 'YES'){
-//     alert("ice cream is life ") 
-// }  
-// };
+var myLittlePony = function () {
+    var response = prompt(userName + " Do I watchn My Little Pony? please answer yes or no").toUpperCase();
+    console.log(userName + " entered " + response);
 
-// var myLittlePony = function () {
-//     var response = prompt(userName + " Have you ever watched my little pony? please answer yes or no").toUpperCase();
-// console.log(userName + " entered " + response);
+    if (response === 'NO') {
+        alert(userName + " I watch it all the time with my son Braeden")
+    }
+    if (response === 'YES') {
+        alert("It is on alllll the time. My four year old son is a total Brony ")
+        score++;
+    }
+};
 
-// if (response === 'NO') {
-//     alert(userName + " , you have not lived life")
-// }
-// if (response === 'YES'){
-//     alert("It is on alllll the time. My four year old son is a total Brony ") 
-// }  
-// };
+var canYouTouchYourToes = function () {
+    var response = prompt(userName + " Can I touch my toes?? please answer yes or no").toUpperCase();
+    console.log(userName + " entered " + response);
 
-// var canYouTouchYourToes = function () {
-//     var response = prompt(userName + " Can you touch your toes?? please answer yes or no").toUpperCase();
-// console.log(userName + " entered " + response);
+    if (response === 'NO') {
+        alert(userName + " We all can if we try")
+        score++;
+    }
+    if (response === 'YES') {
+        alert("I probably could if I tried")
+        score++;
+    }
+};
 
-// if (response === 'NO') {
-//     alert(userName + " We all can if we try")
-// }
-// if (response === 'YES'){
-//     alert("I probably could if I tried") 
-// }  
-// };
+var doYouThinkIlike = function () {
+    var response = prompt(userName + " Do you think I like grapes? please answer yes or no").toUpperCase();
+    console.log(userName + " entered " + response);
 
-// var doYouThinkIlike = function () {
-//     var response = prompt(userName + " Do you think I like grapes? please answer yes or no").toUpperCase();
-// console.log(userName + " entered " + response);
-
-// if (response === 'NO') {
-//     alert(userName + " correct! I do NOT like grapes because I feed them to the monsters just about every morning and I dont ever want to see grapes again!!")
-// }
-// if (response === 'YES'){
-//     alert("NOPE!I feed them to the monsters just about every morning and I dont ever want to see grapes again!") 
-// }  
-// };
+    if (response === 'NO') {
+        alert(userName + " correct! I do NOT like grapes because I feed them to the monsters just about every morning and I dont ever want to see grapes again!!")
+        score++
+    }
+    if (response === 'YES') {
+        alert("NOPE!I feed them to the monsters just about every morning and I dont ever want to see grapes again!")
+    }
+};
 
 
-// var numberGame = function () {
-//     var number;
-//     var counter = 1;
-//     while (number !== 5) {
-//         number = parseInt(prompt('can you guess my favorite number?'))
-//         if (number < 5) {
-    //             alert('go higher!')
-    //             counter++
-    //         } else if (number > 5){
-        //             alert('try lower')
-        //             counter++
-        //         }
-        //     }
-        // }
-        musicTypes = ['metal', 'classical', 'rap', 'hip hop', 'rock', 'jazz']
-        var musicQuestion = prompt('can you guess my favorite type of music, think general categories like classical, rap, hip hop, rock, jazz, or metal?').toLowerCase();
-        var guessAttempts = 5;
-        var correct; 
-var favoriteMusic = function () {
-while (guessAttempts < 6) {
-    musicQuestion;
-    alert('try again you have ' + guessAttempts + 'remaining') 
-    guessAttempts--;
-    musicQuestion;
-} if (musicQuestion === musicTypes[0]) {
-    alert('good job' + userName)
+var numberGame = function () {
+    var number;
+    var counter = 1;
+    correctAnswer = false; 
+    while (number !== 5 && correctAnswer === false) {
+        numberQ = parseInt(prompt('can you guess my favorite number?'))
+        if (numberQ < 5) {
+            alert('go higher!')
+            counter++
+        } if (numberQ === 5){
+            alert('yay');
+            correctAnswer = true;
+            counter++;
+        }
+        else if (numberQ > 5) {
+            alert('try lower')
+            
+        }
+    }
+}
+
+
+function musicType() {
+    var styles = ['METAL', 'RAP', 'CLASSICAL']
+    for (var i = 0; i < 6; i++) {
+        var question = prompt('can you guess my favorite music?')
+        var answer = question.toUpperCase();
+
+        for (var j = 0; j < styles.length; j++) {
+            if (answer === styles[j]) {
+                alert('correct')
+                i = 6; 
+                score++
+                break; 
+            }
+        }
+        if (i !== 6){
+            alert('try again')
+        }
+
+    }
     
-} if (musicQuestion !== musicTypes[0]){
-    alert('try again you have ' + guessAttempts + 'remaining')
-    musicQuestion;
-    guessAttempts --;
-}
-if ( guessAttempts === 0) {
-    alert('not today!')
-}
+
 }
 
-// likeTea();
-// iceCream();
-// myLittlePony();
-// canYouTouchYourToes();
-// doYouThinkIlike();
-// numberGame();
-favoriteMusic();
+closeOut = function() {
+    var closing = alert('Thank you for visiting, I secretly kept score. you got ' + score + ' out of seven questions right')
+};
+
+likeTea();
+iceCream();
+myLittlePony();
+canYouTouchYourToes();
+doYouThinkIlike();
+numberGame();
+musicType();
+closeOut();
