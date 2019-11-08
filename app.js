@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 var score = 0;
 var userName = prompt('What is your name?').toUpperCase();
 console.log("do you think " + userName + " likes us?")
@@ -115,19 +115,15 @@ function musicType() {
 
 }
 
-
 closeOut = function() {
     var closing = alert('Thank you for visiting, I secretly kept score. you got ' + score + ' out of seven questions right')
 };
-
-
 
 likeTea();
 iceCream();
 myLittlePony();
 canYouTouchYourToes();
 doYouThinkIlike();
-
 numberGame();
 musicType();
 closeOut();
