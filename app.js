@@ -1,5 +1,5 @@
 'use strict';
-
+var OnePager = function () {
 var userName = prompt('What is your name?').toUpperCase();
 console.log("do you think " + userName + " likes us?")
 
@@ -70,3 +70,6 @@ myLittlePony();
 canYouTouchYourToes();
 doYouThinkIlike();
 
+}
+
+OnePager ();
