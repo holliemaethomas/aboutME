@@ -1,11 +1,9 @@
-// 'use strict';
-var score = 0;
-// var userName = prompt('What is your name?').toUpperCase();
-// console.log("do you think " + userName + " likes us?")
 
-// var likeTea = function () {
-//     var response = prompt(userName + " do you like tea? please answer yes or no").toUpperCase();
-// console.log(userName + " entered " + response);
+'use strict';
+var OnePager = function () {
+var userName = prompt('What is your name?').toUpperCase();
+console.log("do you think " + userName + " likes us?")
+
 
 // if (response === 'NO') {
 //     alert("I am slightly judging you")
@@ -101,10 +99,13 @@ if ( guessAttempts === 0) {
 }
 }
 
-// likeTea();
-// iceCream();
-// myLittlePony();
-// canYouTouchYourToes();
-// doYouThinkIlike();
-// numberGame();
-favoriteMusic();
+
+likeTea();
+iceCream();
+myLittlePony();
+canYouTouchYourToes();
+doYouThinkIlike();
+
+}
+
+OnePager ();
