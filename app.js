@@ -73,9 +73,9 @@ var doYouThinkIlike = function () {
 var numberGame = function () {
     var number;
     var counter = 1;
-    correctAnswer = false; 
+     var correctAnswer = false; 
     while (number !== 5 && correctAnswer === false) {
-        numberQ = parseInt(prompt('can you guess my favorite number?'))
+       var numberQ = parseInt(prompt('can you guess my favorite number?'))
         if (numberQ < 5) {
             alert('go higher!')
             counter++
@@ -115,7 +115,7 @@ function musicType() {
 
 }
 
-closeOut = function() {
+ let closeOut = function() {
     var closing = alert('Thank you for visiting, I secretly kept score. you got ' + score + ' out of seven questions right')
 };
 
