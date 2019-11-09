@@ -115,7 +115,7 @@ function musicType() {
 
 }
 
- let closeOut = function() {
+ var closeOut = function() {
     var closing = alert('Thank you for visiting, I secretly kept score. you got ' + score + ' out of seven questions right')
 };
 
